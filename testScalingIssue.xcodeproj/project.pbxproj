@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBAB2DD7208D607F00AE63E1 /* RingParticles.scnp in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DD6208D607F00AE63E1 /* RingParticles.scnp */; };
+		EBAB2DD9208DA0B200AE63E1 /* SaturnRing.scn in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DD8208DA0B200AE63E1 /* SaturnRing.scn */; };
+		EBAB2DDD208DA12500AE63E1 /* dykoxi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DDC208DA12500AE63E1 /* dykoxi.jpg */; };
+		EBAB2DDF208DA18D00AE63E1 /* 2k_saturn_ring_alpha.png in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DDE208DA18D00AE63E1 /* 2k_saturn_ring_alpha.png */; };
+		EBAB2DE1208DAB5B00AE63E1 /* 2k_saturn_ring_alpha2.png in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DE0208DAB5B00AE63E1 /* 2k_saturn_ring_alpha2.png */; };
+		EBAB2DE3208DB21500AE63E1 /* bright-neptune-rings.png in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DE2208DB21500AE63E1 /* bright-neptune-rings.png */; };
+		EBAB2DE5208DB26A00AE63E1 /* bright-neptune-rings-rotated.png in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DE4208DB26A00AE63E1 /* bright-neptune-rings-rotated.png */; };
+		EBAB2DE7208DB34B00AE63E1 /* uranus__rings_by_jcpag2010-d98olap.png in Resources */ = {isa = PBXBuildFile; fileRef = EBAB2DE6208DB34B00AE63E1 /* uranus__rings_by_jcpag2010-d98olap.png */; };
 		EBB859ED20899D94002E1C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB859EC20899D94002E1C78 /* AppDelegate.swift */; };
 		EBB859EF20899D94002E1C78 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB859EE20899D94002E1C78 /* art.scnassets */; };
 		EBB859F120899D94002E1C78 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB859F020899D94002E1C78 /* GameViewController.swift */; };
@@ -27,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBAB2DD6208D607F00AE63E1 /* RingParticles.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = RingParticles.scnp; sourceTree = "<group>"; };
+		EBAB2DD8208DA0B200AE63E1 /* SaturnRing.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = SaturnRing.scn; sourceTree = "<group>"; };
+		EBAB2DDC208DA12500AE63E1 /* dykoxi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dykoxi.jpg; sourceTree = "<group>"; };
+		EBAB2DDE208DA18D00AE63E1 /* 2k_saturn_ring_alpha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2k_saturn_ring_alpha.png; sourceTree = "<group>"; };
+		EBAB2DE0208DAB5B00AE63E1 /* 2k_saturn_ring_alpha2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2k_saturn_ring_alpha2.png; path = ../../../../Downloads/2k_saturn_ring_alpha2.png; sourceTree = "<group>"; };
+		EBAB2DE2208DB21500AE63E1 /* bright-neptune-rings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bright-neptune-rings.png"; sourceTree = "<group>"; };
+		EBAB2DE4208DB26A00AE63E1 /* bright-neptune-rings-rotated.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bright-neptune-rings-rotated.png"; sourceTree = "<group>"; };
+		EBAB2DE6208DB34B00AE63E1 /* uranus__rings_by_jcpag2010-d98olap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uranus__rings_by_jcpag2010-d98olap.png"; sourceTree = "<group>"; };
 		EBB859E920899D94002E1C78 /* testScalingIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testScalingIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB859EC20899D94002E1C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB859EE20899D94002E1C78 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -81,7 +97,15 @@
 			children = (
 				EBB859EC20899D94002E1C78 /* AppDelegate.swift */,
 				EBB859EE20899D94002E1C78 /* art.scnassets */,
+				EBAB2DD6208D607F00AE63E1 /* RingParticles.scnp */,
 				EBB859F020899D94002E1C78 /* GameViewController.swift */,
+				EBAB2DD8208DA0B200AE63E1 /* SaturnRing.scn */,
+				EBAB2DDE208DA18D00AE63E1 /* 2k_saturn_ring_alpha.png */,
+				EBAB2DE0208DAB5B00AE63E1 /* 2k_saturn_ring_alpha2.png */,
+				EBAB2DE2208DB21500AE63E1 /* bright-neptune-rings.png */,
+				EBAB2DE4208DB26A00AE63E1 /* bright-neptune-rings-rotated.png */,
+				EBAB2DE6208DB34B00AE63E1 /* uranus__rings_by_jcpag2010-d98olap.png */,
+				EBAB2DDC208DA12500AE63E1 /* dykoxi.jpg */,
 				EBB859F220899D94002E1C78 /* Main.storyboard */,
 				EBB859F520899D94002E1C78 /* Assets.xcassets */,
 				EBB859F720899D94002E1C78 /* LaunchScreen.storyboard */,
@@ -182,10 +206,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBAB2DDF208DA18D00AE63E1 /* 2k_saturn_ring_alpha.png in Resources */,
+				EBAB2DE1208DAB5B00AE63E1 /* 2k_saturn_ring_alpha2.png in Resources */,
+				EBAB2DD7208D607F00AE63E1 /* RingParticles.scnp in Resources */,
+				EBAB2DE7208DB34B00AE63E1 /* uranus__rings_by_jcpag2010-d98olap.png in Resources */,
+				EBAB2DDD208DA12500AE63E1 /* dykoxi.jpg in Resources */,
+				EBAB2DD9208DA0B200AE63E1 /* SaturnRing.scn in Resources */,
 				EBB859EF20899D94002E1C78 /* art.scnassets in Resources */,
+				EBAB2DE5208DB26A00AE63E1 /* bright-neptune-rings-rotated.png in Resources */,
 				EBB859F920899D94002E1C78 /* LaunchScreen.storyboard in Resources */,
 				EBB859F620899D94002E1C78 /* Assets.xcassets in Resources */,
 				EBB859F420899D94002E1C78 /* Main.storyboard in Resources */,
+				EBAB2DE3208DB21500AE63E1 /* bright-neptune-rings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,11 +389,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MSC65LTVM;
 				INFOPLIST_FILE = testScalingIssue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lemming.testScalingIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -371,11 +406,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4MSC65LTVM;
 				INFOPLIST_FILE = testScalingIssue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Lemming.testScalingIssue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
