@@ -177,29 +177,32 @@ class GameViewController: UIViewController {
         let z = firstNode.position.z * 0.55
         let xyz = SCNVector3Make(x, y, z)
 
+        //1. This block of code is the second system, orient then project on z axis
+        //   Comment line 182 - 216 then Uncomment no 2. to use first system
         let magnify = SCNAction.move(to: xyz, duration: 2.0)
         cameraNode.runAction(magnify, completionHandler: {
-            print("old cam pos - \(cameraNode.worldPosition)")
             let orbit = SCNNode()
             orbit.name = "orbit"
             orbit.position = firstNode.worldPosition
-            
             orbit.constraints = [SCNLookAtConstraint(target: cameraNode)]
             
             let newCam = SCNNode()
             let camera = SCNCamera()
             newCam.camera = camera
-//            print("xyz - \(xyz)")
 //            newCam.constraints = [SCNLookAtConstraint(target: firstNode)]
+            
+            // Methods to calculate distance to place camera
+            // - Method 1
             let x2 = cameraNode.position.x - firstNode.position.x
             let y2 = cameraNode.position.y - firstNode.position.y
             let z2 = cameraNode.position.z - firstNode.position.z
             let xyz2 = SCNVector3Make(x2, y2, z2)
-            newCam.position.z = 8//scnView.scene!.rootNode.convertPosition(cameraNode.position, to: orbit) // xyz2
-            orbit.constraints = []
-            orbit.eulerAngles = SCNVector3Zero
+            // - Method 2, using world coordinates
+            let distance = scnView.scene!.rootNode.convertPosition(cameraNode.position, to: orbit)
+            
+            newCam.position.z = 8 // some rough number distance that works cuz im lazy, use pythagoreas to find dist
+            orbit.constraints = [] // release the constraint so the camera can rotate
 
-            print("new cam pos - \(newCam.position)")
             orbit.addChildNode(newCam)
             scnView.scene?.rootNode.addChildNode(orbit)
             scnView.pointOfView = newCam
@@ -211,6 +214,42 @@ class GameViewController: UIViewController {
                 scnView.addGestureRecognizer(panGesture)
             }
         })
+        
+        //2. This block of code is for the system we developed this evening
+//        cameraNode.runAction(magnify, completionHandler: {
+//            let orbit = SCNNode()
+//            orbit.name = "orbit"
+//            orbit.position = firstNode.worldPosition
+////            orbit.constraints = [SCNLookAtConstraint(target: cameraNode)]
+//
+//            let newCam = SCNNode()
+//            let camera = SCNCamera()
+//            newCam.camera = camera
+//            newCam.constraints = [SCNLookAtConstraint(target: firstNode)]
+//
+//            // calculate distance to place camera
+//            // - Method 1
+//            let x2 = cameraNode.position.x - firstNode.position.x
+//            let y2 = cameraNode.position.y - firstNode.position.y
+//            let z2 = cameraNode.position.z - firstNode.position.z
+//            let xyz2 = SCNVector3Make(x2, y2, z2)
+//            // - Method 2, using world coordinates
+//            let distance = scnView.scene!.rootNode.convertPosition(cameraNode.position, to: orbit)
+        
+//            newCam.position = xyz2
+////            orbit.constraints = [] // release the constraint so the camera can rotate
+//
+//            orbit.addChildNode(newCam)
+//            scnView.scene?.rootNode.addChildNode(orbit)
+//            scnView.pointOfView = newCam
+//
+//            DispatchQueue.main.async {
+//                let panGesture = UIPanGestureRecognizer(target: self, action: #selector(self.bodyPan(_:)))
+//                panGesture.maximumNumberOfTouches = 1
+//                panGesture.minimumNumberOfTouches = 1
+//                scnView.addGestureRecognizer(panGesture)
+//            }
+//        })
 
         
         // set the scene to the view
